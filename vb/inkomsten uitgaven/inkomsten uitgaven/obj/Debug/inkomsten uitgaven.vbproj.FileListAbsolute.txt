@@ -1,0 +1,20 @@
+C:\Users\Gebruiker\source\repos\inkomsten uitgaven\inkomsten uitgaven\bin\Debug\inkomsten uitgaven.exe.config
+C:\Users\Gebruiker\source\repos\inkomsten uitgaven\inkomsten uitgaven\bin\Debug\inkomsten uitgaven.exe
+C:\Users\Gebruiker\source\repos\inkomsten uitgaven\inkomsten uitgaven\bin\Debug\inkomsten uitgaven.pdb
+C:\Users\Gebruiker\source\repos\inkomsten uitgaven\inkomsten uitgaven\bin\Debug\inkomsten uitgaven.xml
+C:\Users\Gebruiker\source\repos\inkomsten uitgaven\inkomsten uitgaven\obj\Debug\inkomsten uitgaven.vbprojAssemblyReference.cache
+C:\Users\Gebruiker\source\repos\inkomsten uitgaven\inkomsten uitgaven\obj\Debug\inkomsten_uitgaven.inloggen.resources
+C:\Users\Gebruiker\source\repos\inkomsten uitgaven\inkomsten uitgaven\obj\Debug\inkomsten_uitgaven.Resources.resources
+C:\Users\Gebruiker\source\repos\inkomsten uitgaven\inkomsten uitgaven\obj\Debug\inkomsten uitgaven.vbproj.GenerateResource.cache
+C:\Users\Gebruiker\source\repos\inkomsten uitgaven\inkomsten uitgaven\obj\Debug\inkomsten uitgaven.vbproj.CoreCompileInputs.cache
+C:\Users\Gebruiker\source\repos\inkomsten uitgaven\inkomsten uitgaven\obj\Debug\inkomsten uitgaven.exe
+C:\Users\Gebruiker\source\repos\inkomsten uitgaven\inkomsten uitgaven\obj\Debug\inkomsten uitgaven.xml
+C:\Users\Gebruiker\source\repos\inkomsten uitgaven\inkomsten uitgaven\obj\Debug\inkomsten uitgaven.pdb
+C:\Users\Gebruiker\source\repos\inkomsten uitgaven\inkomsten uitgaven\bin\Debug\MySql.Data.dll
+C:\Users\Gebruiker\source\repos\inkomsten uitgaven\inkomsten uitgaven\bin\Debug\Google.Protobuf.dll
+C:\Users\Gebruiker\source\repos\inkomsten uitgaven\inkomsten uitgaven\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Gebruiker\source\repos\inkomsten uitgaven\inkomsten uitgaven\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Gebruiker\source\repos\inkomsten uitgaven\inkomsten uitgaven\bin\Debug\Renci.SshNet.dll
+C:\Users\Gebruiker\source\repos\inkomsten uitgaven\inkomsten uitgaven\bin\Debug\MySql.Data.xml
+C:\Users\Gebruiker\source\repos\inkomsten uitgaven\inkomsten uitgaven\obj\Debug\inkomsten uitgaven.vbproj.CopyComplete
+C:\Users\Gebruiker\source\repos\inkomsten uitgaven\inkomsten uitgaven\obj\Debug\inkomsten_uitgaven.startpag.resources
