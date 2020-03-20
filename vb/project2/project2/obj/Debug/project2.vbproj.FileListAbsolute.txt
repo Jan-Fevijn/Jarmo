@@ -16,3 +16,22 @@ C:\Users\jarmo.van.moeffaert\Desktop\root\github\Jarmo\vb\project2\project2\obj\
 C:\Users\jarmo.van.moeffaert\Desktop\root\github\Jarmo\vb\project2\project2\obj\Debug\project2.exe
 C:\Users\jarmo.van.moeffaert\Desktop\root\github\Jarmo\vb\project2\project2\obj\Debug\project2.xml
 C:\Users\jarmo.van.moeffaert\Desktop\root\github\Jarmo\vb\project2\project2\obj\Debug\project2.pdb
+C:\Users\Gebruiker\Desktop\map in mappen\my SQL\root\github2\Jarmo\vb\project2\project2\bin\Debug\project2.exe.config
+C:\Users\Gebruiker\Desktop\map in mappen\my SQL\root\github2\Jarmo\vb\project2\project2\bin\Debug\project2.exe
+C:\Users\Gebruiker\Desktop\map in mappen\my SQL\root\github2\Jarmo\vb\project2\project2\bin\Debug\project2.pdb
+C:\Users\Gebruiker\Desktop\map in mappen\my SQL\root\github2\Jarmo\vb\project2\project2\bin\Debug\project2.xml
+C:\Users\Gebruiker\Desktop\map in mappen\my SQL\root\github2\Jarmo\vb\project2\project2\bin\Debug\MySql.Data.dll
+C:\Users\Gebruiker\Desktop\map in mappen\my SQL\root\github2\Jarmo\vb\project2\project2\bin\Debug\Google.Protobuf.dll
+C:\Users\Gebruiker\Desktop\map in mappen\my SQL\root\github2\Jarmo\vb\project2\project2\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Gebruiker\Desktop\map in mappen\my SQL\root\github2\Jarmo\vb\project2\project2\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Gebruiker\Desktop\map in mappen\my SQL\root\github2\Jarmo\vb\project2\project2\bin\Debug\Renci.SshNet.dll
+C:\Users\Gebruiker\Desktop\map in mappen\my SQL\root\github2\Jarmo\vb\project2\project2\bin\Debug\MySql.Data.xml
+C:\Users\Gebruiker\Desktop\map in mappen\my SQL\root\github2\Jarmo\vb\project2\project2\obj\Debug\project2.vbprojAssemblyReference.cache
+C:\Users\Gebruiker\Desktop\map in mappen\my SQL\root\github2\Jarmo\vb\project2\project2\obj\Debug\project2.Form1.resources
+C:\Users\Gebruiker\Desktop\map in mappen\my SQL\root\github2\Jarmo\vb\project2\project2\obj\Debug\project2.Resources.resources
+C:\Users\Gebruiker\Desktop\map in mappen\my SQL\root\github2\Jarmo\vb\project2\project2\obj\Debug\project2.vbproj.GenerateResource.cache
+C:\Users\Gebruiker\Desktop\map in mappen\my SQL\root\github2\Jarmo\vb\project2\project2\obj\Debug\project2.vbproj.CoreCompileInputs.cache
+C:\Users\Gebruiker\Desktop\map in mappen\my SQL\root\github2\Jarmo\vb\project2\project2\obj\Debug\project2.vbproj.CopyComplete
+C:\Users\Gebruiker\Desktop\map in mappen\my SQL\root\github2\Jarmo\vb\project2\project2\obj\Debug\project2.exe
+C:\Users\Gebruiker\Desktop\map in mappen\my SQL\root\github2\Jarmo\vb\project2\project2\obj\Debug\project2.xml
+C:\Users\Gebruiker\Desktop\map in mappen\my SQL\root\github2\Jarmo\vb\project2\project2\obj\Debug\project2.pdb

@@ -23,7 +23,10 @@ Public Class Form1
 
     Private Sub btnSelect_Click(sender As Object, e As EventArgs) Handles btnSelect.Click
         werdaangepast()
+
+
     End Sub
+
     Private Sub werdaangepast()
         For i = 0 To dt.Rows.Count - 1
 
@@ -32,17 +35,17 @@ Public Class Form1
                     Case 4
                         Dim p As New evenement()
                         p.Naam = dt.Rows(i).Item("Naam")
-                        p.aantaldagen = dt.Rows(i).Item("Voornaam")
-                        p.aantalpersonen = dt.Rows(i).Item("wachtwoord")
+                        p.aantaldagen = dt.Rows(i).Item("aantaldagen")
+                        p.aantalpersonen = dt.Rows(i).Item("aantalpersonen")
                         p.Add()
                     Case 8
                         MessageBox.Show("werd gewist")
-                        evenement.Delete(dtBackup.Rows(i).Item("IDPersoon"))
+                        evenement.Delete(dtBackup.Rows(i).Item("IDevenement"))
                     Case 16
-                        Dim p = evenement.GetOne(dt.Rows(i).Item("IDPersoon"))
+                        Dim p = evenement.GetOne(dt.Rows(i).Item("IDevenement"))
                         p.Naam = dt.Rows(i).Item("Naam")
-                        p.aantaldagen = dt.Rows(i).Item("Voornaam")
-                        p.aantalpersonen = dt.Rows(i).Item("wachtwoord")
+                        p.aantaldagen = dt.Rows(i).Item("aantaldagen")
+                        p.aantalpersonen = dt.Rows(i).Item("aantalpersonen")
                         p.Update()
                 End Select
             End If
