@@ -68,7 +68,7 @@ else{
 If ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (isset($_POST["klaskeuze"]) and $_POST["klaskeuze"] <> "Maak je keuze") {
-        $sql = "SELECT leerlingID, naamLeeling FROM leerling where naamKlas = '" . $_POST["klaskeuze"] . "'";
+        $sql = "SELECT idklas, naamKlas FROM klas where naamKlas = '" . $_POST["klaskeuze"] . "'";
     
         $resultaat = $conn->query($sql);
 
@@ -78,7 +78,7 @@ If ($_SERVER["REQUEST_METHOD"] == "POST") {
             while($row = $resultaat->fetch_assoc()){
 
 
-                echo  "<option value='" . $row["naamLeerling"] . "'>" . $row["naamLeerling"] . "</option>";
+                echo  "<option value='" . $row["idproduct"] . "'>" . $row["winkelnaam"] . "</option>";
             }
             
         }
@@ -91,7 +91,7 @@ If ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
     </select>
-    <input type="submit" value="verzend leerling">
+    <input type="submit" value="verzend winkel">
 </form>
 </body>
 </html>
