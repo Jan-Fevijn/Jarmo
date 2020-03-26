@@ -1,24 +1,6 @@
 <?php   
-        //databank gegevens
-
-        $servername = "127.0.0.1";
-        $username = "root";
-        $password = "usbw";
-        $dbname = "extra";
-
-        // Maak je connectie
-        $conn = new mysqli($servername, $username, $password, $dbname);
-
-        // controle van je connectie
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        } 
-        else
-        {
-            echo "<!-- alles ok<br>-->";
-
-        }
-        ?>
+include "config.php"
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -35,7 +17,7 @@
 <select name="KlasKeuze">
   <option>Maak je keuze</option>
   <?php
-  $sql = "SELECT DISTINCT naamKlas FROM klas";
+  $sql = "SELECT DISTINCT naamklas FROM klas";
 
 $resultaat = $conn->query($sql);
 
@@ -61,14 +43,14 @@ else{
 </form>
 <p></p>
 <form action="index.php" method="POST" >
-    <input type="hidden" naam="actie" value="klaskeuze">
-    <select name="klas">
+    <input type="hidden" naam="actie" value="leerlingkeuze">
+    <select name="leerling">
         <option>Maak je keuze</option>
 <?php
 If ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    if (isset($_POST["klaskeuze"]) and $_POST["klaskeuze"] <> "Maak je keuze") {
-        $sql = "SELECT idklas, naamKlas FROM klas where naamKlas = '" . $_POST["klaskeuze"] . "'";
+    if (isset($_POST["KlasKeuze"]) and $_POST["KlasKeuze"] <> "Maak je keuze") {
+        $sql = "SELECT leerlingKlasID, naamLeerling,naamKlas FROM info_leerlingen where naamKlas = '" . $_POST["KlasKeuze"] . "'";
     
         $resultaat = $conn->query($sql);
 
@@ -78,7 +60,7 @@ If ($_SERVER["REQUEST_METHOD"] == "POST") {
             while($row = $resultaat->fetch_assoc()){
 
 
-                echo  "<option value='" . $row["idklas"] . "'>" . $row["naamKlas"] . "</option>";
+                echo  "<option value='" . $row["leerlingKlasID"] . "'>" . $row["naamLeerling"] . "</option>";
             }
             
         }
