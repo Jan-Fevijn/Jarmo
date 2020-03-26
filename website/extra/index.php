@@ -78,7 +78,7 @@ If ($_SERVER["REQUEST_METHOD"] == "POST") {
             while($row = $resultaat->fetch_assoc()){
 
 
-                echo  "<option value='" . $row["idproduct"] . "'>" . $row["winkelnaam"] . "</option>";
+                echo  "<option value='" . $row["idklas"] . "'>" . $row["naamKlas"] . "</option>";
             }
             
         }
