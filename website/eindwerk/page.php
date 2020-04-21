@@ -27,7 +27,7 @@
             <li><a href="index.php">Home</a></li>
             <li><a href="info.php">meer info</a></li>
             <li><a href="page.php">rooster van mijn eindwerk</a></li>
-           
+            <li><a href="telaat.php">telaat pagina</a></li>
             
             <li><a href="contact.php">Contact Us</a></li>
           </ul>

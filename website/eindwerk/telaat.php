@@ -1,8 +1,33 @@
+<?php   
+        //databank gegevens
+
+        $servername = "127.0.0.1";
+        $username = "root";
+        $password = "usbw";
+        $dbname = "eindwerk";
+
+        // Maak je connectie
+        $conn = new mysqli($servername, $username, $password, $dbname);
+
+        // controle van je connectie
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        } 
+        else
+        {
+            echo "<!-- alles ok<br>-->";
+
+        }
+?>
+
+
+
+
 <!DOCTYPE HTML>
 <html>
 
 <head>
-  <title>eindwerk jarmo</title>
+  <title>ta laat leerlingen</title>
   <meta name="description" content="website description" />
   <meta name="keywords" content="website keywords, website keywords" />
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
@@ -50,8 +75,38 @@
         </div>
       </div>
       <div class="content">
-        <h1>welkom op mijn website</h1>
-       <p>Ik moet er voor zorgen dat de ouders van van de leerlingen die te laat zijn een sms krijgen.</p>
+
+
+     <p>kies een leerkracht</p>
+<select name="leerkracht">
+  <option>Maak je keuze</option>
+  <?php
+  $sql = "SELECT naam,voornaam, leerkrachtenID FROM leerkracht";
+
+$resultaat = $conn->query($sql);
+
+if ($resultaat->num_rows > 0) {
+
+    
+    while($row = $resultaat->fetch_assoc()){
+
+       
+        echo "<option  value='". $row["leerkrachtenID"] ."'>" . $row["voornaam"] ." ". $row["naam"] . "</option>";
+    }
+    
+}
+else{
+    //echo ($sql);
+    echo "<option>niets gevonden</option>";
+}
+?>
+
+
+</select>
+<input type="submit"></input>
+
+
+
        
        <p></p>
       </div>

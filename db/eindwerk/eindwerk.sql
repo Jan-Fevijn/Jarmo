@@ -27,8 +27,8 @@ CREATE TABLE `eindwerk`.`leerlingKlas` (
 PRIMARY KEY (`leerlingKlasID`));
 
 
-drop table  if exists leerkrachten;
-CREATE TABLE `eindwerk`.`leerkrachten` (
+drop table  if exists leerkracht;
+CREATE TABLE `eindwerk`.`leerkracht` (
   `leerkrachtenID` INT NOT NULL AUTO_INCREMENT,
   `naam` varchar(45) NULL,
   `voornaam` varchar(45) NULL , 
