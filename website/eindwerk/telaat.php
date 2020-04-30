@@ -107,6 +107,39 @@ else{
 
 
 
+<form action="telaat.php" method="POST" >
+    <input type="hidden" naam="actie" value="leerkrachtkeuze">
+    <select name="leerling">
+        <option>Maak je keuze</option>
+<?php
+If ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    if (isset($_POST["leerkracht"]) and $_POST["leerkracht"] <> "Maak je keuze") {
+        $sql = "SELECT idproduct, winkelnaam FROM product where naam = '" . $_POST["productKeuze"] . "'";
+    
+        $resultaat = $conn->query($sql);
+
+        if ($resultaat->num_rows > 0) {
+
+            
+            while($row = $resultaat->fetch_assoc()){
+
+
+                echo  "<option value='" . $row["idproduct"] . "'>" . $row["winkelnaam"] . "</option>";
+            }
+            
+        }
+        else{
+            //echo ($sql);
+            echo "niets gevonden";
+        }
+    }
+
+}
+?>
+    </select>
+    <input type="submit" value="verzend winkel">
+
        
        <p></p>
       </div>
