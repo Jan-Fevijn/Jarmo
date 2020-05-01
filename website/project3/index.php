@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
 
   <?php  
 
@@ -19,7 +26,7 @@ if ($conn->connect_error) {
 else
 {
     if ($debug){
-    echo "alles ok<br>";
+    echo "<!-- alles ok -->";
     }
 }
 
@@ -29,10 +36,14 @@ else
 </head>
 <body>
 	<?php
-If ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if  ($_POST["code"] == ""){
+
+
+If ($_SERVER["REQUEST_METHOD"] == "GET") {
+    if ($_GET["code"] == ""){
         if ($debug){
-             echo "foutje";
+             echo "<!-- foutje -->";
+
+
             }
             else{
                 header("location:index.php?fout=allesInvullen");
@@ -42,7 +53,7 @@ If ($_SERVER["REQUEST_METHOD"] == "POST") {
     else{
         // variabelen zijn niet leeg --> controle naar databank
         //$sqlControle = "SELECT `gebruiker`.`idgebruiker` FROM `toetswebdesign`.`gebruiker` WHERE gebruikernaam = `" . $_POST["login"] . "` and wachtwoord = `" . $_POST["ww"] . "`";
-        $sqlControle = "SELECT `klant`.`code` FROM `project3`.`klant` WHERE `klant`.`code` = '" . $_POST["code"] . "'";
+        $sqlControle = "SELECT `klant`.`code` FROM `project3`.`klant` WHERE `klant`.`code` = '" . $_GET["code"] . "'";
         if ($debug) echo $sqlControle;
 
         $restulaatControle = $conn->query($sqlControle);
@@ -52,7 +63,7 @@ If ($_SERVER["REQUEST_METHOD"] == "POST") {
                 //header("location:enkelAdmin.php");
                     $id = $row["code"];
 
-                   header('location:klant.php?ID=' . $id);
+                   header('location:klant.php?code=' . $id);
                     
                 }
         }
@@ -64,11 +75,16 @@ If ($_SERVER["REQUEST_METHOD"] == "POST") {
    
 
 ?>
-<form method="Post">
+<form method="Get">
 
-	<input type="text" name="code">
-	<input type="submit" name="verzenden">
+	<p>code ingeven</p>
+	<input type="text" class="form-control" name="code">
 
+	<input type="submit" class="btn .btn-primary" name="verzenden">
+
+
+  </form>
+</div>
 
 
 

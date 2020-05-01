@@ -50,3 +50,6 @@ INSERT INTO `broodpositiedatum` (`idbrood`, `positie`, `Datum`, `aantalIn`, `kos
 INSERT INTO `saldo` (`idklant`, `saldo`, `datum`, `broodpositiedatum`) VALUES ('1', '-1.3', '2020-04-21', '2');
 INSERT INTO `saldo` (`idklant`, `saldo`, `datum`, `broodpositiedatum`) VALUES ('1', '-1.3', '2020-04-21', '2');
 INSERT INTO `saldo` (`idklant`, `saldo`, `datum`, `broodpositiedatum`) VALUES ('1', '20', '2020-04-18', '1');
+
+
+
