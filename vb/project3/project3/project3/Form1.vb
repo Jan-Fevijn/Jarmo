@@ -26,7 +26,7 @@
         o = txtbroodnaam.Text
 
 
-        x.Query("insert into broodtype(broodnaam) values ( ?, ?)", New List(Of Object)({o}))
+        x.Query("insert into broodtype(broodnaam) values (?)", New List(Of Object)({o}))
 
     End Sub
 End Class
