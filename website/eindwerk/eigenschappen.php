@@ -1,3 +1,5 @@
+<!DOCTYPE HTML>
+<html>
 <?php   
         //databank gegevens
 
@@ -20,14 +22,8 @@
         }
 ?>
 
-
-
-
-<!DOCTYPE HTML>
-<html>
-
 <head>
-  <title>te laat leerlingen</title>
+  <title>eindwerk jarmo</title>
   <meta name="description" content="website description" />
   <meta name="keywords" content="website keywords, website keywords" />
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
@@ -75,78 +71,37 @@
         </div>
       </div>
       <div class="content">
+        <?php
 
-<form method="POST">
-     <p>kies een leerkracht</p>
-<select name="leerkracht">
-  <option>Maak je keuze</option>
-  <?php
-  $sql = "SELECT naam,voornaam, leerkrachtenID FROM leerkracht";
+$sql = "SELECT leerlingID,naamLeerling,hoeveel_keer_telaat FROM leerling";
+$result = $conn->query($sql);
 
-$resultaat = $conn->query($sql);
+if ($result->num_rows > 0) {
+  // output data of each row
 
-if ($resultaat->num_rows > 0) {
+echo "<table>";
 
-    
-    while($row = $resultaat->fetch_assoc()){
 
+echo "<tr>";
+echo "<th>id: </th>";
+echo "<th>Name: </th>";
+echo "<th>te laat gekomen</th>";
+echo "</tr>";
+
+  while($row = $result->fetch_assoc()) {
+    echo "<tr> <td>" . $row["leerlingID"]. "</td><td> " . $row["naamLeerling"]."</td><td>" . $row["hoeveel_keer_telaat"] . " </td> </tr><br>";
+
+  }
+
+    echo "</table>";
+} else {
+  echo "0 results";
+}
+
+$conn->close();
+?>
        
-        echo "<option  value='". $row["leerkrachtenID"] ."'>" . $row["voornaam"] ." ". $row["naam"] . "</option>";
-    }
-    
-}
-else{
-    //echo ($sql);
-    echo "<option>niets gevonden</option>";
-}
-?>
-
-
-</select>
-<input type="submit"></input>
-
-</form>
-
-<form action="eigenschappen.php" method="POST" >
-    <input type="hidden" naam="actie" value="leerkrachtkeuze">
-    <select id="leerling" name="leerling">
-        <option>Maak je keuze</option>
-
-
-<?php
-If ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-    if (isset($_POST["leerkracht"]) and $_POST["leerkracht"] <> "Maak je keuze") {
-        $sql = "SELECT naamLeerling,hoeveel_keer_telaat FROM leerling where leerkrachtID = '" . $_POST["leerkrachtenID"] . "'";
-    
-        $resultaat = $conn->query($sql);
-
-        if ($resultaat->num_rows > 0) {
-
-            
-            while($row = $resultaat->fetch_assoc()){
-
-
-                echo  "<option value='" . $row["leerlingID"] . "'>" . $row["naamLeerling"] ." / ".$row["hoeveel_keer_telaat"]." keer te laat.". "</option>";
-
-            }
-            
-        }
-        else{
-            //echo ($sql);
-            echo "niets gevonden";
-        }
-    }
-
-}
-
-?>
-    </select>
-
- 
-    <input type="submit" value="meer info">
-   
-
+       <p></p>
       </div>
     </div>
     <footer>
