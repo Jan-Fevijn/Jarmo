@@ -73,7 +73,7 @@
       <div class="content">
         <?php
 
-$sql = "SELECT leerlingID,naamLeerling,hoeveel_keer_telaat FROM leerling";
+$sql = "SELECT leerlingID,naamLeerling,voornaam,hoeveel_keer_telaat FROM leerling";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -85,11 +85,12 @@ echo "<table>";
 echo "<tr>";
 echo "<th>id: </th>";
 echo "<th>Name: </th>";
+echo "<th>voornaam: </th>";
 echo "<th>te laat gekomen</th>";
 echo "</tr>";
 
   while($row = $result->fetch_assoc()) {
-    echo "<tr> <td>" . $row["leerlingID"]. "</td><td> " . $row["naamLeerling"]."</td><td>" . $row["hoeveel_keer_telaat"] . " </td> </tr><br>";
+    echo "<tr> <td>" . $row["leerlingID"]. "</td><td> " . $row["naamLeerling"]."</td><td>" . $row["voornaam"] ."</td><td>" . $row["hoeveel_keer_telaat"] . " </td> </tr><br>";
 
   }
 

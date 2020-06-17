@@ -46,7 +46,7 @@ CREATE TABLE `uitleen_games`.`genre` (
 
 CREATE TABLE `uitleen_games`.`koppeltablegenre` (
   `idkoppeltablegenre` INT NOT NULL AUTO_INCREMENT,
-  `info_games` VARCHAR(45) NULL,
-  `genre` VARCHAR(45) NULL,
+  `idinfo_games` VARCHAR(45) NULL,
+  `idgenre` VARCHAR(45) NULL,
   PRIMARY KEY (`idkoppeltablegenre`));
 
